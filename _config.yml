@@ -2,3 +2,4 @@ theme: minima
 title: Chronicles of the World
 author: Matthew Otto
 description: A site made to play an evergrowing text-based adventure.
+permalink: /:categories/:year/:month/:day/:title:output_ext
