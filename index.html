@@ -1,54 +1,103 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  
-  <title>Page Title</title>
-
-  <!-- Meta Tag Lines -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <div id="Header">
+  <head>
     
-    <div id="HeaderLeft">
-      <h1>Chronicles of the World</h1>  
+    <title>Page Title</title>
+  
+    <!-- Meta Tag Lines -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <div id="Header">
+      <div id="HeaderLeft">
+        <h1>Chronicles of the World</h1>  
+      </div>
+
+      <nav>
+        <div id="PageMenu">
+          <ul>
+           <li>
+             <a href="/">Home</a>
+           </li>
+           <li>
+             <a href="/about.html">About</a>
+           </li>
+           <li>
+             <a href="/socials.html">Socials</a>
+           </li>
+         </ul>
+        </div>
+      </nav>
+      
     </div>
+    
+  </head>
   
-   <nav>
-     <ul>
-       <li>
-         <a href="/">Home</a>
-       </li>
-       <li>
-         <a href="/about.html">About</a>
-       </li>
-       <li>
-         <a href="/socials.html">Socials</a>
-       </li>
-     </ul>
-   </nav>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
   
-  </div>
-  
-</head>
+  <style>
+    header {
+      overflow: hidden;
+    }
+    
+    #Header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      height: 60px;
+    }
+    
+    #HeaderLeft {
+      
+    }
+    
+    #HeaderRight {
+      text-align: right;
+    }
 
-<body>
-  <h1>This is a Heading</h1>
-  <p>This is a paragraph.</p>
-</body>
-
-<style>
-#Header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#HeaderLeft {
-  
-}
-
-#HeaderRight {
-  text-align: right;
-}
-</style>
+    #menu{
+        float: right;
+        width: 70%;
+        height: 100%;
+        margin: none;
+    }
+        
+    #menu ul{
+        text-align: center;
+        float: right;
+        margin: none;
+        background: #0074D9;
+    }
+        
+    #menu li{
+        display: inline-block;
+        padding: none;
+        margin: none;
+    }
+        
+    #menu li a, #menu li span{
+        display: inline-block;
+        padding: 0em 1.5em;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 60px;
+    }
+        
+    #menu li a{
+            
+        color: #FFF;
+    }
+        
+    #menu li:hover a, #menu li span{
+        background: #FFF;
+        color: #0074D9;
+        border-left: 1px solid #0074D9;
+        text-decoration: none;
+    }
+  </style>
 </html>
